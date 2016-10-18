@@ -1,0 +1,47 @@
+/**       Vineet Kumar Singh :: Assessment     **/
+/**  Version: 2.2 :: Last Modified: 02/09/2016 **/
+body {
+    position: relative;
+}
+.jumbotron-modified{
+    position: relative;
+}
+.btn-modified{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+.sections{
+    padding-top: 50px;
+}
+#home {
+    padding-top:60px;
+    background-color: white;
+    overflow: hidden;
+}
+.footer{
+    padding: 40px 0;
+    border-top: 1px solid #eee;
+}
+#about {    background-color: #efefef;}
+#contact {  background-color: white;}
+
+@media (max-width: 767px){
+    .btn-modified{
+        display: block;
+    }
+    #move{
+        position: relative;        
+    }
+    .div-moved{
+        left: -50%;
+    }
+    .larger-div{
+        width: 150%;
+        margin: 0;
+    }
+    .padding-left-zero{
+        padding-left: 0 !important;
+    }
+}

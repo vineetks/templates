@@ -1,0 +1,199 @@
+/** Vineet Kumar Singh :: Bootstrap Assignment **/
+/**  Version: 4.1 :: Last Modified: 02/09/2016 **/
+body {
+    position: relative;
+}
+/*************************TOP HEADER***************************/
+.header-top{
+    background: url('../images/bgPattern.png');
+}
+h1.webpage-title{
+    font-size: 60px;
+    color: white;
+    padding: 20px 0;
+}
+.webpage-title{
+    font-family: 'Niconne', cursive;
+    font-weight: bold;
+}
+.navbar-brand.webpage-title{
+    font-size: 26px;
+    color: white;
+}
+.affix {
+    top:0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+.navbar {
+    margin-bottom: 0px;
+}
+.navbar-inverse{
+    background: #414652;
+    border-color: #414652;
+}
+#myNavbar>ul>li>a{
+    font-family: Oswald;
+    font-weight: bold;
+}
+#myNavbar .active>a, #myNavbar>ul>li>a{
+    background: none;
+}
+.affix ~ .container-fluid {
+    position: relative;
+    top: 50px;
+}
+
+.navbar-modified{
+    border-radius: 0;
+}
+.navbar-inverse .navbar-nav>li>a{
+    color: white;
+}
+#myDropdownMenu>li>a {
+    padding: 6px;
+}
+#myDropdownMenu>li>a:hover {
+    background: #353b49 !important;
+}
+#myDropdownMenu{
+    background: rgba(256,256,256,0.8);
+}
+.navbar-brand.webpage-title:hover,.navbar-inverse .navbar-nav>li>a:hover, .active>a, #myDropdownMenu>li>a {
+    color: #eb6d4c !important;
+}
+#incorrectSubmission{
+    background: red; 
+    padding: 15px;
+    visibility: hidden;
+}
+/*******************CAROUSEL*************************/
+.carousel-inner{
+    border: 5px solid white;
+}
+
+.carousel-inner h1{
+    font-family: Oswald;
+    font-size: 60px;
+    color: white;
+    padding: 20px 0;
+    margin: 20px;
+    font-weight: bold;
+}
+.carousel-indicators{
+    position: relative;
+    bottom: 0;
+    font-size: 40px;
+}
+.carousel-indicators li, .carousel-indicators .active{
+    width: 20px;
+    height: 20px;
+}
+.carousel-indicators .active{
+    background: #eb6d4c !important;
+    border-color: #eb6d4c !important;
+}
+.btn-purchase{
+    background: #484848;
+    border-color: wheat;
+    padding: 12px 50px;
+    margin: 20px 0 80px;
+}
+.btn-purchase:hover{
+    background: #adadad;
+    color: black;
+    border: 1px solid black;
+}
+/*******************************BODY***********************************/
+.icon-circle{
+    background: #eee;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+.icon-circle>span{
+    font-size: 30px;
+    margin: 60px 0;
+}
+.text-align-left {
+    text-align: left !important;
+}
+.red-text{
+    color: red;
+    padding: 5px;
+}
+.orange-text{
+    color: #eb6d4c !important;
+}
+.modified-heading{
+    color: #6e8697;
+    margin: 20px;
+}
+.modified-heading h2{
+    width:60%;
+    margin: 20px auto;
+}
+.modified-h1{
+    font-family: Oswald;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.modified-h1 span{
+    border-bottom: 4px solid #eb6d4c;
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    padding-top: 8px;
+}
+.extra-margin-row{
+    margin: 50px 0;
+
+}
+.glyphicon-ok-modified{
+    font-size: 20px;
+    color: green;
+    vertical-align: middle;
+    top: 0
+}
+.glyphicon-remove-modified{
+    font-size: 20px;
+    color: red;
+    vertical-align: middle;
+    top: 0;
+}
+.error-message{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 5px;
+}
+#footer>div>span{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.filler-text{
+    font-family: Rokkitt, serif;
+    line-height: 1.4;
+}
+.sections{  
+    color: black;
+}
+#services, #client, #faq {background-color: white;}
+#features, #team, #blog {background-color: #efefef;}
+#footer{
+    background-color: #414652; 
+    color: white; 
+    position: relative;
+}
+@media (min-width: 768px){
+    .modal-dialog {
+        width: 768px;
+    }
+}
+@media (max-width: 768px){
+    #footer>div>span{
+        display: none;
+    }
+}

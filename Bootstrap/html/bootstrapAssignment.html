@@ -1,0 +1,363 @@
+<!-- Vineet Kumar Singh :: Bootstrap Assignment -->
+<!--  Version: 4.1 :: Last Modified: 02/09/2016 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap Assignment</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/myBootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Niconne" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Rokkitt" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/myBScript.js"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div id="top" class="container-fluid text-center header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"><h1 class="webpage-title">Flat One</h1></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <h1>A FLAT <span class="orange-text">LANDING</span> PAGE</h1>
+                            </div>
+
+                            <div class="item">
+                                <h1>A SINGLE PAGE <span class="orange-text">TEMPLATE</span></h1>
+                            </div>
+
+                            <div class="item">
+                                <h1>THE <span class="orange-text">THIRD</span> ONE</h1>
+                            </div>
+                        </div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-primary btn-lg btn-purchase" data-toggle="modal" data-target="#myModal">Purchase</button>
+                </div>
+                <div class="modal fade text-align-left" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div id="incorrectSubmission">Please fill out all fields correctly.</div>
+                            </div>
+                            <div class="modal-body" style="color: black;">
+                                <div id="myForm">
+                                    <h2>Register User</h2>
+                                    <form class="form-horizontal">
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3 text-align-left" for="name">Name:<sup class="red-text">*</sup></label>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control check-empty" id="name" value="Vineet">
+                                            </div>
+                                            <div class="col-md-5 red-text" id="nameMessage"></div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3 text-align-left" for="mobile">Mobile:<sup class="red-text">*</sup></label>
+                                            <div class="col-md-4">
+                                                <input type="number" class="form-control" id="mobile" placeholder="10 Digits" value="9450788108">
+                                            </div>
+                                            <div class="col-md-5 red-text" id="mobileMessage"></div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3 text-align-left" for="altMobile">Alternate mobile/Landline:</label>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control" id="altMobile" value="9450788108">
+                                            </div>
+                                            <div class="col-md-5"></div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3 text-align-left" for="gender">Sex:</label>
+                                            <div class="col-md-4">
+                                                <select id="gender" class="form-control">
+                                                    <option value="">---------</option>
+                                                    <option value="Male" selected>Male</option>
+                                                    <option value="Female">Female</option>
+                                                    <option value="Others">Others</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-5"></div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3 text-align-left" for="age">Age:<sup class="red-text">*</sup></label>
+                                            <div class="col-md-4">
+                                                <input type="number" class="form-control check-empty" id="age" min="1" max="120" placeholder="in years" value="24">
+                                            </div>
+                                            <div class="col-md-5 red-text" id="ageMessage"></div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3 text-align-left" for="date">Date of dog-bite:<sup class="red-text">*</sup></label>
+                                            <div class="col-md-4">
+                                                <input type="date" class="form-control  check-empty" id="date" placeholder="format: dd/mm/yyyy">
+                                            </div>
+                                            <div class="col-md-5 red-text" id="dateMessage"></div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3 text-align-left" for="creditCard">Credit Card Number:<sup class="red-text">*</sup></label>
+                                            <div class="col-md-4">
+                                                <input type="number" class="form-control" id="creditCard" value="9450788108945078">
+                                            </div>
+                                            <div class="col-md-5 red-text" id="creditCardMessage"></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" id="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <nav class="navbar navbar-inverse navbar-modified"  id="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+                <a class="navbar-brand webpage-title" href="#top">Flat One</a>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">HOME<span class="caret"></span></a>
+                            <ul class="dropdown-menu" id="myDropdownMenu">
+                                <li><a href="#section11">Header Fixed Image</a></li>
+                                <li><a href="#section12">Home Pattern</a></li>
+                                <li><a href="#section13">Home Image Slider</a></li>
+                                <li><a href="#section14">Home Video</a></li>
+                            </ul>
+                        </li>
+                        <li class="active"><a href="#top">TOP</a></li>
+                        <li><a href="#services">SEVICES</a></li>
+                        <li><a href="#features">FEATURES</a></li>
+                        <li><a href="#client">CLIENT</a></li>
+                        <li><a href="#team">TEAM</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#blog">BLOG</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="services" class="container-fluid sections text-center">
+        <div class="container">
+            <h1 class="modified-h1">SERVICES<span></span></h1>
+            <div class="row">
+                <div class="col-md-12 modified-heading">
+                    <h2>Lolipop powder danish sugar plum caramels liquorice sweet cookie</h2>
+                </div>
+            </div>
+            <div class="row extra-margin-row">
+                <div class="col-sm-3">
+                    <div class="icon-circle">
+                        <span class="glyphicon glyphicon-console"></span>
+                    </div>
+                    <h4 class="modified-heading">Landing Pages</h4>
+                    <div>We work together to develop uncomplicated marketing plans that meet business objectives.</div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="icon-circle">
+                        <span class="glyphicon glyphicon-tag"></span>
+                    </div>
+                    <h4 class="modified-heading">Landing Pages</h4>
+                    <div>We work together to develop uncomplicated marketing plans that meet business objectives.</div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="icon-circle">
+                        <span class="glyphicon glyphicon-user"></span>
+                    </div>
+                    <h4 class="modified-heading">Landing Pages</h4>
+                    <div>We work together to develop uncomplicated marketing plans that meet business objectives.</div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="icon-circle">
+                        <span class="glyphicon glyphicon-pushpin"></span>
+                    </div>
+                    <h4 class="modified-heading">Landing Pages</h4>
+                    <div>We work together to develop uncomplicated marketing plans that meet business objectives.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="features" class="container-fluid sections text-center">
+        <div class="container">
+            <h1 class="modified-h1">FEATURES<span></span></h1>
+            <div class="row">
+                <div class="col-md-12 modified-heading">
+                    <h2>Lolipop powder danish sugar plum caramels liquorice sweet cookie</h2>
+                </div>
+            </div>
+            <div class="row extra-margin-row">
+                <div class="col-md-4">
+                    <div class="icon-circle" style="background: #ccc">
+                        <span class="glyphicon glyphicon-th-large"></span>
+                    </div>
+                    <h4 class="modified-heading">Feature 1</h4>
+                    <div class="filler-text"></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon-circle" style="background: #ccc">
+                        <span class="glyphicon glyphicon-signal"></span>
+                    </div>
+                    <h4 class="modified-heading">Feature 2</h4>
+                    <div class="filler-text"></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon-circle" style="background: #ccc">
+                        <span class="glyphicon glyphicon-road"></span>
+                    </div>
+                    <h4 class="modified-heading">Feature 3</h4>
+                    <div class="filler-text"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="client" class="container-fluid sections text-center">
+        <div class="container">
+            <h1 class="modified-h1">CLIENTS<span></span></h1>
+            <div class="row">
+                <div class="col-md-12 modified-heading">
+                    <h2>Lolipop powder danish sugar plum caramels liquorice sweet cookie</h2>
+                </div>
+            </div>
+            <div class="row extra-margin-row">
+                <div class="col-md-2">
+                    <div class="icon-circle">
+                        <span class="glyphicon glyphicon-send"></span>
+                    </div>
+                    <h4 class="modified-heading">Client 1</h4>
+                </div>
+                <div class="col-md-2">
+                    <div class="icon-circle">
+                        <span class="glyphicon glyphicon-cutlery"></span>
+                    </div>
+                    <h4 class="modified-heading">Client 2</h4>
+                </div>
+                <div class="col-md-2">
+                    <div class="icon-circle">
+                        <span class="glyphicon glyphicon-tower"></span>
+                    </div>
+                    <h4 class="modified-heading">Client 3</h4>
+                </div>
+                <div class="col-md-2">
+                    <div class="icon-circle">
+                        <span class="glyphicon glyphicon-cloud-upload"></span>
+                    </div>
+                    <h4 class="modified-heading">Client 4</h4>
+                </div>
+                <div class="col-md-2">
+                    <div class="icon-circle">
+                        <span class="glyphicon glyphicon-apple"></span>
+                    </div>
+                    <h4 class="modified-heading">Client 5</h4>
+                </div>
+                <div class="col-md-2">
+                    <div class="icon-circle">
+                        <span class="glyphicon glyphicon-blackboard"></span>
+                    </div>
+                    <h4 class="modified-heading">Client 6</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="team" class="container-fluid sections text-center">
+        <div class="container">
+            <h1 class="modified-h1">TEAM<span></span></h1>
+            <div class="row">
+                <div class="col-md-12 modified-heading">
+                    <h2>Lolipop powder danish sugar plum caramels liquorice sweet cookie</h2>
+                </div>
+            </div>
+            <div class="row extra-margin-row">
+                <div class="col-md-4">
+                    <img src="../images/vineet.jpg" class="img-thumbnail" alt="Vineet Kumar Singh" >
+                    <p>Vineet Kumar Singh</p>
+                </div>
+                <div class="col-md-4">
+                   <img src="../images/vineet.jpg" class="img-thumbnail" alt="Vineet Kumar Singh" >
+                    <p>Vineet Kumar Singh</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="../images/vineet.jpg" class="img-thumbnail" alt="Vineet Kumar Singh" >
+                    <p>Vineet Kumar Singh</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="faq" class="container-fluid sections text-center">
+        <div class="container">
+            <h1 class="modified-h1">FAQ<span></span></h1>
+            <div class="row">
+                <div class="col-md-12 modified-heading">
+                    <h2>Lolipop powder danish sugar plum caramels liquorice sweet cookie</h2>
+                </div>
+            </div>
+            <div class="row extra-margin-row text-justify">
+                <div class="col-md-4 filler-text" id="loremIpsum">
+                    Lorem ipsum dolor sit amet, duo brute praesent ut. Diam equidem te nec. Cu pri dicta prompta gloriatur, te prima salutatus nam. Debet gloriatur sea no. Per sint iusto ea, eum ex putent intellegebat.<br>
+                    Cu sea impetus facilisis. Vel omnis assueverit ne. Viris virtute fierent an sed, modus mazim ad sea. Iisque voluptaria mea te, eam sale vocibus quaerendum id. Ad iusto accusata referrentur quo. Te tempor facilisis per, ut usu stet saepe consectetuer, mei hinc nonumes cotidieque an.
+                </div>
+                <div class="col-md-4 filler-text"></div>
+                <div class="col-md-4 filler-text"></div>
+            </div>
+        </div>
+    </div>
+    <div id="blog" class="container-fluid sections text-center">
+        <div class="container">
+            <h1 class="modified-h1">Blog<span></span></h1>
+            <div class="row">
+                <div class="col-md-12 modified-heading">
+                    <h2>Lolipop powder danish sugar plum caramels liquorice sweet cookie</h2>
+                </div>
+            </div>
+            <div class="row extra-margin-row text-justify">
+                <div class="col-md-6 filler-text"></div>
+                <div class="col-md-6 filler-text"></div>
+            </div>
+            <div class="row extra-margin-row text-justify">
+                <div class="col-md-4 filler-text"></div>
+                <div class="col-md-4 filler-text"></div>
+                <div class="col-md-4 filler-text"></div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="container-fluid text-center">
+        <div class="container">
+            <h5>Designed and developed by: Vineet Kumar Singh</h5>
+            <span>Last Updated: 31<sup>st</sup> Aug, 2016</span>
+        </div>
+    </div>
+</body>
+</html>
